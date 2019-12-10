@@ -10,8 +10,8 @@ const assetRoutes = require('./api/routes/asset');
 const taskRoutes = require('./api/routes/add-task');
 const allocateRoutes = require('./api/routes/allocate');
 
-
-mongoose.connect('mongodb+srv://om:'+process.env.MONGO_ATLAS_PW+'@node-rest-w5lbn.mongodb.net/test?retryWrites=true&w=majority');
+// in place of url here your mongoDB cluster url whether it is local or cloud
+mongoose.connect('url',{ useNewUrlParser: true });
 
 
 
